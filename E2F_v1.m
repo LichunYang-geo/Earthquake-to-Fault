@@ -204,16 +204,16 @@ currentPath = pwd;
 % 判断系统平台
 if ispc
     sep = '\';
-    exe = sprintf('.\\hough-3d-lines-master\\hough3dlines.exe -dx %d', dx_manual)
-    sp_path = [currentPath, '\hough-3d-lines-master\sp.output.txt'];
-    ab_path = [currentPath, '\hough-3d-lines-master\ab.output.txt'];
-    dat_path = [currentPath, '\hough-3d-lines-master\data\fault_try.dat'];
+    exe = sprintf('.\\hough-3d-lines\\hough3dlines.exe -dx %d', dx_manual)
+    sp_path = [currentPath, '\hough-3d-lines\sp.output.txt'];
+    ab_path = [currentPath, '\hough-3d-lines\ab.output.txt'];
+    dat_path = [currentPath, '\hough-3d-lines\data\fault_try.dat'];
 else
     sep = '/';
-    exe = sprintf('./hough-3d-lines-master/hough3dlines -dx %d', dx_manual)
-    sp_path = [currentPath, '/hough-3d-lines-master/sp.output.txt'];
-    ab_path = [currentPath, '/hough-3d-lines-master/ab.output.txt'];
-    dat_path = [currentPath, '/hough-3d-lines-master/data/fault_try.dat'];
+    exe = sprintf('./hough-3d-lines/hough3dlines -dx %d', dx_manual)
+    sp_path = [currentPath, '/hough-3d-lines/sp.output.txt'];
+    ab_path = [currentPath, '/hough-3d-lines/ab.output.txt'];
+    dat_path = [currentPath, '/hough-3d-lines/data/fault_try.dat'];
 end
 % 写入 fault_try.dat
 fopen(dat_path, 'w');

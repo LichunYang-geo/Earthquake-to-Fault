@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/lichun/code/Earthquake-to-Fault/eigen-5.0.0/unsupported/test/alignedvector3.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildUnsupported"
+		],
+		"name" : "alignedvector3"
+	}
+}
